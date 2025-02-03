@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Atspėk skaičių!</title>
+
+
+</head>
+
+<body>
+
+
+
+ <div class="arcade-wrapper">
+        <div class="arcade-screen">
+            <div class="container ">
+                
+                <div class="top">
+                    <div id="heartIcon" class="text health-status">
+                        <img class="health-icon" src="heart.svg"> x
+                        <div data-health></div>
+                    </div>
+                    
+                    <div class="text previous">
+                        <div class="previous-text">Last tried numbers</div>
+                        <div id="previous"></div>
+                    </div>
+                </div>
+        
+                <div class="input">
+                    <div class="text title">GUESS THE NUMBER!</div>
+                    <input type="number" id="guess" placeholder="TEST YOUR LUCK" min="0" />
+                    <button class="button submit" id="bttnsubmit">GUESS!</button>
+                </div>
+        
+                <div class="crt pixelated lcd-display">
+                    <div class="output arcade-text" id="output">To start - choose difficulty</div>
+                </div>
+        
+                <div class="difficulty">
+                    <div class="text options">
+                        <input type="radio" id="dif1" name="difficulty" value="10">
+                        <label for="dif1">10</label><br>
+                        <input type="radio" id="dif2" name="difficulty" value="100">
+                        <label for="dif2">100</label><br>
+                        <input type="radio" id="dif3" name="difficulty" value="500">
+                        <label for="dif3">500</label>
+                    </div>
+                    
+                    <button class="button newgame" id="bttnnewgame">Set difficulty</button>
+                </div> 
+            </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
